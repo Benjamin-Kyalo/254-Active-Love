@@ -1,0 +1,183 @@
+/* GENERAL STYLES   */
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&family=Rubik+Doodle+Triangles&family=Russo+One&display=swap");
+@import url("/font-awesome-4.6.3/css/font-awesome.min.css");
+@import url("/font-awesome-4.6.3/css/font-awesome.min.css");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #a4c2a5;
+}
+html {
+  scroll-behavior: smooth;
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+:root {
+  --pale-blue: hsl(225, 100%, 94%);
+  --bright-blue: hsl(245, 75%, 52%);
+  --very-pale-blue: hsl(225, 100%, 98%);
+  --desaturated-blue: hsl(223, 47%, 23%);
+  --magic-color-yellow: linear-gradient(-45deg, white 30%, yellow 0%);
+  --magic-color-lightgreen: linear-gradient(-45deg, white 30%, lightgreen 0%);
+  --magic-color-lightblue: linear-gradient(-45deg, white 30%, lightblue 0%);
+  --magic-color-tomato: linear-gradient(-45deg, white 30%, tomato 0%);
+  --magic-color-purple: linear-gradient(-45deg, white 30%, purple 0%);
+}
+/* STYLING THE NAVIGATION BAR */
+#active-love-nav-menu {
+  display: block;
+  background: #86e7b8;
+  padding: 20px;
+  margin-bottom: 0px;
+  border-bottom: 1px solid #eee;
+  font-size: 30px;
+  text-transform: uppercase;
+}
+
+.active-love-nav-links {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+}
+
+.ksch-nav-links li {
+  /* Add any individual styles for each list item */
+}
+
+.active-love-nav-links a {
+  text-decoration: none;
+  color: white;
+  font-weight: bolder;
+}
+.appointment,
+#about-active-love {
+  background-color:#051923;
+  border: 20px;
+  border-radius: 10px;
+  padding: 10px;
+  color: black;
+}
+
+/* STYLES BELOW NAVIGATION */
+.content-below-nav {
+  /* background-image: linear-gradient(rgba(5, 0, 136, 0.5), rgba(5, 0, 136, 0.5)),
+    url(assets/maternity1.jpg); */
+  background-color:;
+  box-shadow: 1px 2px 10px 5px white;
+  animation: slider 20s infinite linear;
+  animation-delay: 20s;
+  background-position: relative;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 20px;
+  margin-top: 10px;
+  padding: 20px;
+  border-radius: 20px;
+  color: black;
+}
+.content-below-nav p {
+  color:black;
+  font-size: 30px;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  border: 20px;
+  border-radius: 20px;
+  margin: 20px;
+}
+
+/* STYLES ABOUT MISSION & VISION */
+.mission-vision {
+  display: flex;
+  justify-content: space-around;
+  margin: 50px;
+}
+.mission,
+.vission {
+  margin: 20px;
+  border: 20px;
+  border-radius: 15px;
+  align-content: center;
+  background-color: white;
+  max-height: 50%;
+}
+.mission-254,
+.vision-254 {
+  margin: 10px;
+  list-style: none;
+}
+
+/* PROJECT SECTION */
+#projects {
+    position: relative;
+  }
+  .color-container {
+    border: #a3a3a3;
+    /* background: #fafafa; */
+  }
+  .project-img {
+    border-radius: 2rem;
+    width: 90%;
+    height: 90%;
+  }
+  .project-title {
+    margin: 1rem;
+    color: black;
+  }
+  .project-btn {
+    color: black;
+    border-color: #a3a3a3;
+  }
+  .active-love-projects {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .article-container {
+    display: flex;
+    text-align: initial;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 2.5rem;
+    justify-content: space-around;
+  }
+  
+/* @keyframes slider {
+  0% {
+    background-image: linear-gradient(
+        rgba(5, 0, 136, 0.5),
+        rgba(5, 0, 136, 0.5)
+      ),
+      url(assets/hospital_hall.jpg);
+    animation-delay: 20s;
+    animation-duration: 20s;
+  }
+  35% {
+    background-image: linear-gradient(
+        rgba(5, 0, 136, 0.5),
+        rgba(5, 0, 136, 0.5)
+      ),
+      url(assets/reception.jpg);
+    animation-delay: 20s;
+    animation-duration: 20s;
+  }
+  75% {
+    background-image: linear-gradient(
+        rgba(5, 0, 136, 0.5),
+        rgba(5, 0, 136, 0.5)
+      ),
+      url(assets/consultation.jpg);
+    animation-delay: 20s;
+    animation-duration: 20s;
+  }
+} */
