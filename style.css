@@ -61,7 +61,7 @@ html {
 }
 .appointment,
 #about-active-love {
-  background-color: #051923;
+  background-color: greenyellow;
   border: 20px;
   border-radius: 10px;
   padding: 10px;
@@ -72,8 +72,7 @@ html {
 .content-below-nav {
   background-image: linear-gradient(rgba(5, 0, 136, 0.5), rgba(5, 0, 136, 0.5)),
     url(images/sweets.jpg);
-  background-position: relative
-  ;
+  background-position: relative;
   background-repeat: no-repeat;
   background-size: cover;
   box-shadow: 1px 2px 10px 5px white;
@@ -94,10 +93,10 @@ html {
   border-radius: 20px;
   margin: 20px;
 }
-marquee{
-  color:#00A6FB;
+marquee {
+  color: #00a6fb;
   font-size: 32px;
-  background-color:white ;
+  background-color: white;
 }
 /* STYLES ABOUT MISSION & VISION */
 .mission-vision {
@@ -155,6 +154,20 @@ marquee{
   justify-content: space-around;
 }
 
+/* ABOUT SECTION */
+#about-section-active-love{
+  background-color: white;
+  padding: 20px;
+  border: 20px;
+  border-radius: 20px;
+}
+.about-section {
+  padding: 20px;
+}
+.about-paragraph {
+  /* padding: 20px;
+  border-top:none ; */
+}
 /* @keyframes slider {
   0% {
     background-image: linear-gradient(
