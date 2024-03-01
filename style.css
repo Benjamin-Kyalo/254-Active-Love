@@ -155,18 +155,33 @@ marquee {
 }
 
 /* ABOUT SECTION */
-#about-section-active-love{
+#about-section-active-love {
   background-color: white;
   padding: 20px;
   border: 20px;
   border-radius: 20px;
 }
-.about-section {
+.about-section-h1 {
   padding: 20px;
+  padding-bottom: 0px;
+  font-size: 30px;
+  background-color: white;
 }
 .about-paragraph {
-  /* padding: 20px;
-  border-top:none ; */
+  padding: 20px;
+  line-height: 2rem;
+  font-size: 16px;
+}
+.about-section-main {
+  padding: 20px;
+  border: 20px;
+  border-radius: 20px;
+  display: flex;
+}
+.clapping {
+  height: 70vh;
+  border-radius: 20px;
+  border: 20px;
 }
 /* @keyframes slider {
   0% {
