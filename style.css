@@ -61,7 +61,7 @@ html {
 }
 .appointment,
 #about-active-love {
-  background-color:#051923;
+  background-color: #051923;
   border: 20px;
   border-radius: 10px;
   padding: 10px;
@@ -70,32 +70,35 @@ html {
 
 /* STYLES BELOW NAVIGATION */
 .content-below-nav {
-  /* background-image: linear-gradient(rgba(5, 0, 136, 0.5), rgba(5, 0, 136, 0.5)),
-    url(assets/maternity1.jpg); */
-  background-color:;
+  background-image: linear-gradient(rgba(5, 0, 136, 0.5), rgba(5, 0, 136, 0.5)),
+    url(images/sweets.jpg);
+  background-position: relative
+  ;
+  background-repeat: no-repeat;
+  background-size: cover;
   box-shadow: 1px 2px 10px 5px white;
   animation: slider 20s infinite linear;
   animation-delay: 20s;
-  background-position: relative;
-  background-repeat: no-repeat;
-  background-size: cover;
   margin: 20px;
   margin-top: 10px;
   padding: 20px;
   border-radius: 20px;
-  color: black;
 }
 .content-below-nav p {
-  color:black;
+  color: white;
   font-size: 30px;
-  justify-content: center;
-  align-items: center;
+  /* justify-content: center; */
+  /* align-items: center; */
   padding: 20px;
   border: 20px;
   border-radius: 20px;
   margin: 20px;
 }
-
+marquee{
+  color:#00A6FB;
+  font-size: 32px;
+  background-color:white ;
+}
 /* STYLES ABOUT MISSION & VISION */
 .mission-vision {
   display: flex;
@@ -119,39 +122,39 @@ html {
 
 /* PROJECT SECTION */
 #projects {
-    position: relative;
-  }
-  .color-container {
-    border: #a3a3a3;
-    /* background: #fafafa; */
-  }
-  .project-img {
-    border-radius: 2rem;
-    width: 90%;
-    height: 90%;
-  }
-  .project-title {
-    margin: 1rem;
-    color: black;
-  }
-  .project-btn {
-    color: black;
-    border-color: #a3a3a3;
-  }
-  .active-love-projects {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-  }
-  .article-container {
-    display: flex;
-    text-align: initial;
-    flex-wrap: wrap;
-    flex-direction: row;
-    gap: 2.5rem;
-    justify-content: space-around;
-  }
-  
+  position: relative;
+}
+.color-container {
+  border: #a3a3a3;
+  /* background: #fafafa; */
+}
+.project-img {
+  border-radius: 2rem;
+  width: 90%;
+  height: 90%;
+}
+.project-title {
+  margin: 1rem;
+  color: black;
+}
+.project-btn {
+  color: black;
+  border-color: #a3a3a3;
+}
+.active-love-projects {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.article-container {
+  display: flex;
+  text-align: initial;
+  flex-wrap: wrap;
+  flex-direction: row;
+  gap: 2.5rem;
+  justify-content: space-around;
+}
+
 /* @keyframes slider {
   0% {
     background-image: linear-gradient(
