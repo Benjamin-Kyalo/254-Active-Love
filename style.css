@@ -36,12 +36,14 @@ html {
 /* STYLING THE NAVIGATION BAR */
 #active-love-nav-menu {
   display: block;
-  background: #86e7b8;
+  /* background: #86e7b8; */
   padding: 20px;
   margin-bottom: 0px;
+  padding-top: 20px;
   border-bottom: 1px solid #eee;
   font-size: 30px;
   text-transform: uppercase;
+  border-radius: 20px;
 }
 
 .active-love-nav-links {
@@ -50,25 +52,23 @@ html {
   justify-content: space-around;
 }
 
-.ksch-nav-links li {
-  /* Add any individual styles for each list item */
-}
-
 .active-love-nav-links a {
   text-decoration: none;
   color: white;
   font-weight: bolder;
 }
-.appointment,
-#about-active-love {
-  background-color: greenyellow;
-  border: 20px;
-  border-radius: 10px;
-  padding: 10px;
-  color: black;
+#about-active-love-btn {
+  background-color: #5bd183;
+  /* background-color: white; */
+  border-radius: 20px;
+  border-color: black;
+  font-size: 20px;
+  padding: 15px 15px;
+  text-align: center;
+  margin: auto;
 }
 
-/* STYLES BELOW NAVIGATION */
+/* THIS IS THE STYLES BELOW NAVIGATION */
 .content-below-nav {
   background-image: linear-gradient(rgba(5, 0, 136, 0.5), rgba(5, 0, 136, 0.5)),
     url(images/sweets.jpg);
@@ -86,26 +86,26 @@ html {
 .content-below-nav p {
   color: white;
   font-size: 30px;
-  /* justify-content: center; */
-  /* align-items: center; */
   padding: 20px;
   border: 20px;
   border-radius: 20px;
   margin: 20px;
+  text-align: justify;
 }
 marquee {
-  color: #00a6fb;
+  color: #86e7b8;
   font-size: 32px;
   background-color: white;
+  text-transform: uppercase;
 }
-/* STYLES ABOUT MISSION & VISION */
+/* THIS IS THE STYLES ABOUT MISSION & VISION */
 .mission-vision {
   display: flex;
   justify-content: space-around;
   margin: 50px;
 }
 .mission,
-.vission {
+.vision {
   margin: 20px;
   border: 20px;
   border-radius: 15px;
@@ -118,55 +118,91 @@ marquee {
   margin: 10px;
   list-style: none;
 }
-
-/* PROJECT SECTION */
-#projects {
-  position: relative;
-}
-.color-container {
-  border: #a3a3a3;
-  /* background: #fafafa; */
-}
-.project-img {
-  border-radius: 2rem;
-  width: 90%;
-  height: 90%;
-}
-.project-title {
-  margin: 1rem;
-  color: black;
-}
-.project-btn {
-  color: black;
-  border-color: #a3a3a3;
-}
-.active-love-projects {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-}
-.article-container {
-  display: flex;
-  text-align: initial;
-  flex-wrap: wrap;
-  flex-direction: row;
-  gap: 2.5rem;
-  justify-content: space-around;
+.mission .mission-paragraph,
+.vision .vision-paragraph {
+  padding: 30px;
+  padding-top: 0px;
+  text-align: justify;
 }
 
-/* ABOUT SECTION */
-#about-section-active-love {
-  background-color: white;
+/* THIS IS THE PROJECT SECTION */
+.project-section-h1 {
+  font-size: 3rem;
+  margin: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+#donations {
   padding: 20px;
+}
+
+.project-img {
+  width: 500px;
+  height: 400px;
   border: 20px;
   border-radius: 20px;
 }
-.about-section-h1 {
+
+.active-love-projects {
+  display: flex;
+}
+
+.about-section-h2 {
   padding: 20px;
+  font-size: 20px;
+  background-color: white;
+  height: 50%;
+  border-radius: 20px;
+}
+/* THIS IS THE ABOUT SECTION */
+.about-section-h1 {
+  font-size: 3rem;
+  margin: 20px;
+  margin-bottom: 0px;
+  margin-top: 0px;
   padding-bottom: 0px;
-  font-size: 30px;
+  text-align: center;
+}
+#about-section-active-love {
+  width: 100vh;
+  max-width: 95%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.about-text {
+  width: 550px;
+}
+.about-text h1 {
+  color: white;
+  font-size: 80px;
+  text-transform: capitalize;
+  margin-bottom: 20px;
+}
+.about-section-main {
+  width: 100%;
+  padding: 78px 0px;
   background-color: white;
 }
+.about-section-main img {
+  height: 100vh;
+  /* width: 500px; */
+  background-position: relative;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.about-paragraph {
+  /* background-color: #e3edf7; */
+  background-color: #a4c2a5;
+  border-radius: 20px;
+  text-align: justify;
+}
+.clapping {
+  height: auto;
+  padding: 0px;
+}
+
 .about-paragraph {
   padding: 20px;
   line-height: 2rem;
@@ -179,10 +215,120 @@ marquee {
   display: flex;
 }
 .clapping {
-  height: 70vh;
+  width: 500px;
+  height: 400px;
   border-radius: 20px;
   border: 20px;
 }
+
+/* THIS SECTION CONTAINS THE CONTACT PAGE */
+.contact-h1 {
+  padding-top: 10px;
+  text-align: center;
+  font-size: 3rem;
+}
+input,
+textarea {
+  background-color: white;
+  width: 70%;
+  margin-left: 12%;
+  font-size: 20px;
+  padding: 16px 16px;
+  border-radius: 10px;
+  border-color: black;
+  margin-bottom: 20px;
+}
+textarea {
+  margin-bottom: 25px;
+}
+input:focus-within,
+textarea:focus-within {
+  outline: none;
+  border-color: #5bd183;
+  border-width: 3px;
+}
+.contact-btn-submit {
+  background-color: #5bd183;
+  border-radius: 20px;
+  border-color: black;
+  font-size: 22px;
+  padding: 18px 18px;
+  text-align: center;
+  display: flex;
+  margin: auto;
+}
+.contact-btn-submit:hover {
+  opacity: 80%;
+  cursor: pointer;
+}
+
+/* THIS SECTION CONTAINS THE FAQs */
+.faq-section-h1 {
+  font-size: 3rem;
+  margin: 20px;
+  margin-bottom: 0px;
+  text-align: center;
+}
+.accordion {
+  margin: 60px auto;
+  margin-top: 0px;
+  width: 600px;
+}
+.accordion li {
+  list-style: none;
+  width: 100%;
+  margin: 20px;
+  padding: 10px;
+  border-radius: 8px;
+  background-color: #e3edf7;
+  box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.15),
+    -6px -6px 10px -1px rgba(255, 255, 255, 0.7);
+}
+.accordion li label {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  font-size: 18px;
+  font-weight: 500;
+  cursor: pointer;
+}
+label::before {
+  content: "+";
+  margin-right: 10px;
+  font-size: 24px;
+  font-weight: 600;
+}
+input[type="radio"] {
+  display: none;
+}
+.accordion .content {
+  color: #555;
+  padding: 0 10px;
+  line-height: 26px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s, padding 0.5s;
+}
+.accordion input[type="radio"]:checked + label + .content {
+  max-height: 400px;
+  padding: 10px 10px 20px;
+}
+.accordion input[type="radio"]:checked + label::before {
+  content: "-";
+}
+.content p {
+  text-align: justify;
+}
+/* .accordion input[type="radio"]:checked + label::after {
+  overflow: hidden;
+} */
+
+/* THIS SECTION CONTAINS THE FOOTER */
+.footer-paragraph {
+  background-color: white;
+  text-align: center;
+}
+
 /* @keyframes slider {
   0% {
     background-image: linear-gradient(
