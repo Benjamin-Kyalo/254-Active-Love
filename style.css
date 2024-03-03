@@ -184,6 +184,10 @@ marquee {
   width: 100%;
   padding: 78px 0px;
   background-color: white;
+  padding: 20px;
+  border: 20px;
+  border-radius: 20px;
+  display: flex;
 }
 .about-section-main img {
   height: 100vh;
@@ -197,29 +201,20 @@ marquee {
   background-color: #a4c2a5;
   border-radius: 20px;
   text-align: justify;
-}
-.clapping {
-  height: auto;
-  padding: 0px;
-}
-
-.about-paragraph {
   padding: 20px;
   line-height: 2rem;
   font-size: 16px;
 }
-.about-section-main {
-  padding: 20px;
-  border: 20px;
-  border-radius: 20px;
-  display: flex;
-}
 .clapping {
+  height: auto;
+  padding: 0px;
   width: 500px;
   height: 400px;
   border-radius: 20px;
   border: 20px;
 }
+
+
 
 /* THIS SECTION CONTAINS THE CONTACT PAGE */
 .contact-h1 {
