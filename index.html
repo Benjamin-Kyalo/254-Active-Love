@@ -18,11 +18,90 @@
             <li><a href="#about-section-active-love">About</a></li>
             <li><a href="#donations">Projects</a></li>
             <li><a href="#contact-page">Contact</a></li>
-            <li><a href="#faq">FAQ</a></li>
+            <li><a href="#faq">FAQs</a></li>
+            <li>
+              <button
+                class="loginbtn"
+                onclick="document.getElementById('login-form').style.display='block'"
+                style="width: auto"
+              >
+                Login
+              </button>
           </ul>
         </nav>
       </div>
     </div>
+
+    <!-- OTHER ELEMENTS FOR REGISTRATION FORM -->
+    
+    <div id="login-form">
+      <div class="form-box">
+        <div class="button-box">
+          <div id="btn"></div>
+          <button type="button" onclick="login()" class="toggle-btn">
+            Log In
+          </button>
+          <button type="button" onclick="register()" class="toggle-btn">
+            Register
+          </button>
+        </div>
+        <form id="login" class="input-group-login">
+          <input
+            type="text"
+            class="input-field"
+            placeholder="Email Id"
+            required
+          />
+          <input
+            type="password"
+            class="input-field"
+            placeholder="Enter Password"
+            required
+          />
+          <input type="checkbox" class="check-box" /><span
+            >Remember Password</span
+          >
+          <button type="submit" class="submit-btn">Log In</button>
+        </form>
+        <form id="register" class="input-group-register">
+          <input
+            type="text"
+            class="input-field"
+            placeholder="First Name"
+            required
+          />
+          <input
+            type="text"
+            class="input-field"
+            placeholder="Last Name"
+            required
+          />
+          <input
+            type="email"
+            class="input-field"
+            placeholder="Email Id"
+            required
+          />
+          <input
+            type="password"
+            class="input-field"
+            placeholder="Enter Password"
+            required
+          />
+          <input
+            type="password"
+            class="input-field"
+            placeholder="Confirm Password"
+            required
+          />
+          <input type="checkbox" class="check-box" /><span
+            >I agree to the terms and conditions</span
+          >
+          <button type="submit" class="submit-btn">Register</button>
+        </form>
+      </div>
+    </div>
+
     <!-- CONTENT BELOW NAVIGATION -->
     <div class="content-below-nav">
       <p class="paragraph-below-nav">
@@ -87,7 +166,7 @@
       <br />
       <section class="projects">
         <div class="active-love-projects">
-          <img src="images/praying.jpeg" alt="Project 3" class="project-img" />
+          <img src="images/presentation.jpeg" alt="Project 3" class="project-img" />
           <h2 class="about-section-h2">Prayer time at Emmanuel Children's Home</h2>
           <img src="images/love2.jpeg" alt="Project 3" class="project-img" />
           <h2 class="about-section-h2">Group photo-Emmanuel's Kamulu</h2>
@@ -103,7 +182,7 @@
     <br>
     <section class="about-section-main">
 
-      <img class="clapping" src="images/members.jpg" alt="clapping" />
+      <img class="clapping" src="images/active.jpeg" alt="clapping" />
       <div class="about-text"></div>
         
         <p class="about-paragraph">
@@ -330,5 +409,6 @@
       </p>
       <br>
     </footer>
+    <script src="login.js"></script>
   </body>
 </html>

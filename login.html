@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LOG IN</title>
+    <link rel="stylesheet" href="login.css" />
+    <!-- <link rel="stylesheet" href="login.js" /> -->
+  </head>
+  <body>
+    <div class="full-page">
+      <div class="navbar">
+        <div>
+          <!-- <a href="index.html">Seek Coding</a> -->
+        </div>
+        <nav>
+          <ul id="menuitems">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Projects</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">FAQs</a></li>
+            <li>
+              <button
+                class="loginbtn"
+                onclick="document.getElementById('login-form').style.display='block'"
+                style="width: auto"
+              >
+                Login
+              </button>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div id="login-form">
+        <div class="form-box">
+          <div class="button-box">
+            <div id="btn"></div>
+            <button type="button" onclick="login()" class="toggle-btn">
+              Log In
+            </button>
+            <button type="button" onclick="register()" class="toggle-btn">
+              Register
+            </button>
+          </div>
+          <form id="login" class="input-group-login">
+            <input
+              type="text"
+              class="input-field"
+              placeholder="Email Id"
+              required
+            />
+            <input
+              type="password"
+              class="input-field"
+              placeholder="Enter Password"
+              required
+            />
+            <input type="checkbox" class="check-box" /><span
+              >Remember Password</span
+            >
+            <button type="submit" class="submit-btn">Log In</button>
+          </form>
+          <form id="register" class="input-group-register">
+            <input
+              type="text"
+              class="input-field"
+              placeholder="First Name"
+              required
+            />
+            <input
+              type="text"
+              class="input-field"
+              placeholder="Last Name"
+              required
+            />
+            <input
+              type="email"
+              class="input-field"
+              placeholder="Email Id"
+              required
+            />
+            <input
+              type="password"
+              class="input-field"
+              placeholder="Enter Password"
+              required
+            />
+            <input
+              type="password"
+              class="input-field"
+              placeholder="Confirm Password"
+              required
+            />
+            <input type="checkbox" class="check-box" /><span
+              >I agree to the terms and conditions</span
+            >
+            <button type="submit" class="submit-btn">Register</button>
+          </form>
+        </div>
+      </div>
+
+      <!-- CONTENT BELOW NAVIGATION -->
+    <div class="content-below-nav">
+      <p class="paragraph-below-nav">
+        Introducing "254 Active Love": Where Compassion Fuels Change! Founded in
+        2021, this community-based organization (CBO) is the collaborative
+        effort of Jack, Ricky, Stephanie, Benjamin and others. They came
+        together with a shared vision: to create a ripple effect of positivity
+        that starts with the youngest and most vulnerable among us. <br />
+        <br />
+        Since its inception, 254 Active Love has been a force for good,
+        channeling the generosity of the community...<button 
+          id="about-active-love-btn"
+        >
+          <a href="#about-section-active-love">More</a>
+        </button>
+      </p>
+    </div>
+
+    <br />
+    <!-- <marquee behavior="ripple" direction="left"
+      >"Empowering hearts, transforming lives: Together, we are 254 Active
+      Love."</marquee
+    > -->
+    </div>
+    <script src="login.js"></script>
+  </body>
+</html>
