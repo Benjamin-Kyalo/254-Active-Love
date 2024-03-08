@@ -85,10 +85,11 @@ html {
   position: relative;
   margin: 2% auto;
   /* background: rgba(0, 0, 0, 0.3); */
-  /* background: #a4c2a5; */
-  /* background: #ACC8E5; */
+  /* background: #bcf4de; */
+  background: #86e7b8;
   padding: 10px;
   overflow: hidden;
+  border-radius: 20px;
 }
 .button-box {
   width: 220px;

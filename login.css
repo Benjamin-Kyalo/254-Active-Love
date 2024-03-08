@@ -70,6 +70,7 @@ a {
 /* LOGIN FORM */
 #login-form {
   display: none;
+  background: #86e7b8;
 }
 .form-box {
   width: 380px;
@@ -77,7 +78,8 @@ a {
   position: relative;
   margin: 2% auto;
   /* background: rgba(0, 0, 0, 0.3); */
-  background-color: black;
+  /* background: black; */
+  background: #86e7b8;
   padding: 10px;
   overflow: hidden;
 }
