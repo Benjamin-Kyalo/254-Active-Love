@@ -11,7 +11,7 @@
 
 body {
   font-family: "Poppins", sans-serif;
-  background-color: #a4c2a5;
+  background-color: #3cb371;
 }
 html {
   scroll-behavior: smooth;
@@ -51,7 +51,7 @@ html {
   display: flex;
   justify-content: space-around;
 }
-.active-love-nav-links:hover{
+.active-love-nav-links:hover {
   color: aqua;
 }
 
@@ -61,7 +61,7 @@ html {
   font-weight: bolder;
 }
 #about-active-love-btn {
-  background-color:#f3c693;
+  background-color: #f3c693;
   /* background-color: white; */
   border-radius: 20px;
   border-color: black;
@@ -74,7 +74,7 @@ html {
 /* LOGIN FORM */
 #login-form {
   display: none;
-  background-image: url(images/background1.jpg);
+  background-image: url(images/nature.jpg);
 }
 #login-form:click {
   display: none;
@@ -105,7 +105,7 @@ html {
   border: 0;
   outline: none;
   position: relative;
-  color:white
+  color: white;
 }
 #btn {
   top: 0;
@@ -149,7 +149,7 @@ html {
   outline: none;
   border-radius: 30px;
 }
-.loginbtn{
+.loginbtn {
   padding: 10px;
   cursor: pointer;
   margin: auto;
@@ -159,7 +159,7 @@ html {
   border-radius: 20px;
 }
 .check-box {
-  margin: 30px 10px 34px 0; 
+  margin: 30px 10px 34px 0;
 }
 span {
   color: #777;
@@ -205,7 +205,7 @@ span {
   border-radius: 20px;
   margin: 20px;
   text-align: justify;
-  background-image: url(images/background1.jpg);
+  background-image: url(images/nature.jpg);
 }
 marquee {
   color: #86e7b8;
