@@ -34,6 +34,9 @@ html {
   --magic-color-purple: linear-gradient(-45deg, white 30%, purple 0%);
 }
 /* STYLING THE NAVIGATION BAR */
+.active-love-navigation {
+  background-color: #2e8b57;
+}
 #active-love-nav-menu {
   display: block;
   /* background: #86e7b8; */
@@ -51,6 +54,13 @@ html {
   display: flex;
   justify-content: space-around;
 }
+
+.active-love-nav-links a:hover {
+  color: black;
+  text-decoration: underline;
+  text-underline-offset: 1rem;
+  text-decoration-color: white;
+}
 .active-love-nav-links:hover {
   color: aqua;
 }
@@ -61,13 +71,13 @@ html {
   font-weight: bolder;
 }
 #about-active-love-btn {
-  background-color: #f3c693;
+  background-color: #fff3e4;
   /* background-color: white; */
   border-radius: 20px;
   border-color: black;
   font-size: 20px;
   padding: 15px 15px;
-  text-align: center;
+  /* text-align: center; */
   margin: auto;
 }
 
@@ -208,10 +218,11 @@ span {
   background-image: url(images/nature.jpg);
 }
 marquee {
-  color: #86e7b8;
+  color: #ffff;
   font-size: 32px;
-  background-color: white;
-  text-transform: uppercase;
+  /* font-style:italic; */
+  background-color: #008080;
+  /* text-transform: uppercase; */
 }
 /* THIS IS THE STYLES ABOUT MISSION & VISION */
 .mission-vision {
@@ -313,7 +324,7 @@ marquee {
 }
 .about-paragraph {
   /* background-color: #e3edf7; */
-  background-color: #a4c2a5;
+  background-color: #008080;
   border-radius: 20px;
   text-align: justify;
   padding: 20px;
@@ -356,7 +367,7 @@ textarea:focus-within {
   border-width: 3px;
 }
 .contact-btn-submit {
-  background-color: #f3c693;
+  background-color: #fff3e4;
   border: none;
   border-radius: 20px;
   border-color: black;
@@ -436,6 +447,7 @@ input[type="radio"] {
 .footer-paragraph {
   background-color: white;
   text-align: center;
+  /* color: white; */
 }
 
 /* @keyframes slider {
