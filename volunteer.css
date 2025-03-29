@@ -1,0 +1,45 @@
+/* volunteer.css */
+
+/* Container styling for the volunteer section */
+#volunteer-get-involved {
+  /* Try limiting width and centering to prevent layout overflow */
+  max-width: 800px; /* Adjust as needed */
+  margin: 2rem auto; /* Centers horizontally and adds vertical spacing */
+  padding: 2rem 1rem;
+  background: #f0f0f0;
+  text-align: center;
+  border-radius: 8px; /* Slight rounding for a polished look */
+}
+
+/* Heading styling */
+#volunteer-get-involved .section-heading {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #2e9b59;
+}
+
+/* Paragraph styling for main text and donation info */
+#volunteer-get-involved .volunteer-text,
+#volunteer-get-involved .donation-info {
+  font-size: 1.1rem;
+  color: #333;
+  margin: 0 auto 1.5rem;
+  line-height: 1.6;
+  max-width: 600px; /* Keeps paragraphs from stretching too wide */
+}
+
+/* "Learn How" button styling */
+#volunteer-get-involved .cta-button {
+  display: inline-block;
+  padding: 0.8rem 1.5rem;
+  background-color: #2e9b59;
+  color: #fff;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+  font-size: 1rem;
+}
+
+#volunteer-get-involved .cta-button:hover {
+  background-color: #267d49;
+}

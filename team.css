@@ -1,0 +1,80 @@
+/* Team & Leadership Section */
+#team-profiles {
+  padding: 2rem 1rem;
+  background: #f8f8f8;
+  text-align: center;
+  margin: 2rem 0;
+}
+
+#team-profiles .section-heading {
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+  color: #2e9b59;
+}
+
+/* Grid Layout: 3 columns on large screens */
+.team-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Team Member Card */
+.team-member {
+  background: #fff;
+  padding: 1rem;
+  border-radius: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.team-member:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Fixed circle dimensions for photos */
+.team-photo {
+  width: 200px; /* Fixed width */
+  height: 200px; /* Fixed height, matching width for perfect circle */
+  border-radius: 50%; /* Circular shape */
+  object-fit: cover; /* Crops image to fill circle without distortion */
+  display: block; /* So margin: 0 auto can center it */
+  margin: 0 auto 1rem;
+  transition: transform 0.3s ease;
+}
+
+.team-member:hover .team-photo {
+  transform: scale(1.05);
+}
+
+/* Team member name & description */
+.team-member h3 {
+  margin: 0;
+  font-size: 1.2rem;
+  color: #333;
+}
+
+.team-desc {
+  font-size: 0.95rem;
+  color: #555;
+  margin-top: 0.5rem;
+  line-height: 1.4;
+}
+
+/* Responsive Adjustments */
+/* 2 columns on screens <= 992px */
+@media (max-width: 992px) {
+  .team-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* 1 column on screens <= 576px */
+@media (max-width: 576px) {
+  .team-container {
+    grid-template-columns: 1fr;
+  }
+}

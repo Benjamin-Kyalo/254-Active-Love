@@ -1,0 +1,118 @@
+/* volunteer-details.css */
+
+/* Basic Reset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f8f8f8;
+  color: #333;
+}
+
+/* Header for Volunteer Details Page */
+header {
+  background-color: #2e9b59;
+  color: #fff;
+  text-align: center;
+  padding: 1rem 0;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2rem;
+}
+
+/* Volunteer Information Section */
+.volunteer-info {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+.volunteer-info p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+.volunteer-info h2 {
+  margin-top: 2rem;
+  font-size: 1.8rem;
+  color: #2e9b59;
+  margin-bottom: 1rem;
+}
+
+.volunteer-roles {
+  list-style: disc;
+  margin-left: 1.5rem;
+  font-size: 1.1rem;
+}
+
+/* Contact Section for Volunteer Details */
+.contact-section {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+  text-align: center;
+}
+
+.contact-section h2 {
+  font-size: 1.8rem;
+  color: #2e9b59;
+  margin-bottom: 1rem;
+}
+
+.contact-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.contact-card {
+  background: #fff;
+  border-radius: 10px;
+  padding: 1rem;
+  width: 250px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.contact-card h3 {
+  margin: 0 0 0.5rem 0;
+  color: #2e9b59;
+}
+
+.contact-card p {
+  margin: 0.5rem 0;
+  font-size: 1rem;
+}
+
+.contact-card a {
+  color: #2e9b59;
+  text-decoration: none;
+}
+
+.contact-card a:hover {
+  text-decoration: underline;
+}
+
+/* Footer */
+footer {
+  background-color: #2e9b59;
+  color: #fff;
+  text-align: center;
+  padding: 1rem 0;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .contact-cards {
+    flex-direction: column;
+    align-items: center;
+  }
+}

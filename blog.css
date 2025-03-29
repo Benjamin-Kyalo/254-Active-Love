@@ -1,0 +1,119 @@
+/* NEWS & BLOG SECTION */
+#news-blog {
+  padding: 2rem 1rem;
+  background: #f8f8f8;
+  margin: 2rem 0;
+  overflow: hidden; /* Hides any part of slides that move outside the container */
+  position: relative;
+}
+
+#news-blog .section-heading {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+  color: #2e9b59;
+}
+
+/* SLIDER CONTAINER */
+.news-slider {
+  display: flex;
+  width: 200%; /* Twice the width to show two slides side by side in one "row" */
+  animation: slide 20s linear infinite;
+}
+
+/* INDIVIDUAL SLIDE */
+.news-slide {
+  flex: 0 0 50%;     /* Each slide occupies half the container's width */
+  display: flex;     /* We'll keep image & text side by side */
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  box-sizing: border-box;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;   /* Gives a clickable feel */
+}
+
+/* INTERACTIVE HOVER EFFECT ON SLIDE */
+.news-slide:hover {
+  transform: scale(1.02);
+  box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
+
+/* IMAGE WITHIN SLIDE */
+.news-image {
+  max-width: 200px;   /* Increase if you want a larger poster */
+  width: auto;
+  height: auto;
+  border-radius: 10px;
+  margin-right: 1rem;
+  object-fit: contain; /* Ensures the entire poster is visible, no cropping */
+  transition: transform 0.3s ease;
+}
+
+/* Slight zoom on the image when hovering over the slide */
+.news-slide:hover .news-image {
+  transform: scale(1.05);
+}
+
+/* TEXT CONTAINER */
+.news-content {
+  max-width: 400px;   /* Limits text width to avoid a long single line */
+  text-align: left;
+  line-height: 1.5;
+  word-wrap: break-word; /* In case of very long words/links */
+}
+
+/* HEADINGS & PARAGRAPHS INSIDE CONTENT */
+.news-content h3 {
+  margin: 0 0 0.5rem 0;
+  font-size: 1.8rem;
+  color: #2e9b59;
+}
+.news-content p {
+  font-size: 1rem;
+  color: #555;
+  margin: 0.5rem 0;
+}
+
+/* READ MORE BUTTON */
+.read-more {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  background-color: #2e9b59;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+.read-more:hover {
+  background-color: #267d49;
+}
+
+/* ANIMATION KEYFRAMES */
+@keyframes slide {
+  0%   { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+/* RESPONSIVE ADJUSTMENTS */
+@media (max-width: 768px) {
+  .news-slider {
+    animation-duration: 30s; /* Slow down animation for smaller screens */
+  }
+  .news-slide {
+    flex-direction: column; /* Stack image above text on small screens */
+    height: auto;
+    text-align: center;     /* Center everything in mobile view */
+  }
+  .news-image {
+    margin-right: 0;
+    margin-bottom: 1rem;
+    max-width: 80%;
+  }
+  .news-content {
+    text-align: center;
+    max-width: 90%;
+    margin: 0 auto;
+  }
+}
