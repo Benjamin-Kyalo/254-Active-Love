@@ -1,12 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>registration</title>
-    <link rel="stylesheet" href="registrtation.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>254 Active Love - Register / Login</title>
+  <link rel="stylesheet" href="registration.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap" rel="stylesheet" />
 </head>
 <body>
-    
+  <div class="auth-container">
+    <div class="auth-tabs">
+      <div class="auth-tab active" data-target="registration">Sign Up</div>
+      <div class="auth-tab" data-target="login">Log In</div>
+    </div>
+
+    <!-- Registration Form -->
+    <div id="registration" class="form-section active">
+      <h2>Join 254 Active Love</h2>
+      <form class="auth-form">
+        <div class="input-group password-group">
+          <input type="text" id="firstname" name="firstname" placeholder=" " required>
+          <label for="firstname">First Name</label>
+        </div>
+        
+        <div class="input-group password-group">
+          <input type="email" id="email" name="email" placeholder=" " required>
+          <label for="email">Email</label>
+        </div>
+
+        <div class="input-group password-group">
+          <input type="password" id="reg-password" name="password" placeholder=" " required>
+          <label for="reg-password">Password</label>
+          <span class="toggle-password">👁️</span>
+        </div>
+        
+        <button type="submit" class="form-btn">Sign Up</button>
+      </form>
+    </div>
+
+    <!-- Login Form -->
+    <div id="login" class="form-section">
+      <h2>Welcome Back!</h2>
+      <form class="auth-form">
+        <div class="input-group password-group">
+          <input type="email" id="login-email" name="email" placeholder=" " required>
+          <label for="login-email">Email</label>
+        </div>
+
+        <div class="input-group password-group">
+          <input type="password" id="login-password" name="password" placeholder=" " required>
+          <label for="login-password">Password</label>
+          <span class="toggle-password">👁️</span>
+        </div>
+        
+        <button type="submit" class="form-btn">Log In</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- JavaScript at the bottom for easier debugging -->
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      // Tab switching
+      document.querySelectorAll(".auth-tab").forEach(tab => {
+        tab.addEventListener("click", function () {
+          // Remove active class from all tabs and sections
+          document.querySelectorAll(".auth-tab").forEach(t => t.classList.remove("active"));
+          document.querySelectorAll(".form-section").forEach(s => s.classList.remove("active"));
+          
+          // Add active class to clicked tab and its target
+          this.classList.add("active");
+          document.getElementById(this.dataset.target).classList.add("active");
+        });
+      });
+
+      // Toggle password visibility
+      document.querySelectorAll(".toggle-password").forEach(toggle => {
+        toggle.addEventListener("click", function () {
+          // The input is always two siblings away:
+          // .toggle-password -> label -> input
+          // but easier to find the input in the parent node
+          let input = this.parentNode.querySelector("input");
+          if (input.type === "password") {
+            input.type = "text";
+            this.textContent = "🔒";
+          } else {
+            input.type = "password";
+            this.textContent = "👁️";
+          }
+        });
+      });
+    });
+  </script>
 </body>
 </html>
